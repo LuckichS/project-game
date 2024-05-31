@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://3a6sk1ytwqlm"]
+
+[ext_resource type="Script" path="res://Audio_Slider_Setting.gd" id="1_1wwc2"]
+
+[node name="Audio_Slider_Setting" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1wwc2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+offset_left = -1.0
+offset_right = 693.0
+offset_bottom = 41.0
+
+[node name="Volume" type="HSlider" parent="HBoxContainer"]
+show_behind_parent = true
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Audio_name_lbl" type="Label" parent="HBoxContainer/Volume"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.493
+anchor_top = -1.56275
+anchor_right = 0.493
+anchor_bottom = -1.56275
+offset_left = -72.5
+offset_top = 0.00399971
+offset_right = 72.5
+offset_bottom = 23.004
+grow_horizontal = 2
+grow_vertical = 2
+text = "Общая громкость"
+
+[node name="Audio_Num_lbl" type="Label" parent="HBoxContainer/Volume"]
+layout_mode = 0
+offset_left = 503.0
+offset_top = -4.0
+offset_right = 543.0
+offset_bottom = 19.0
+text = "100"
